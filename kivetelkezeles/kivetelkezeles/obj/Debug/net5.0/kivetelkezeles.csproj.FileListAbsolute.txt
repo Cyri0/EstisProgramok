@@ -1,0 +1,16 @@
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\bin\Debug\net5.0\kivetelkezeles.exe
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\bin\Debug\net5.0\kivetelkezeles.deps.json
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\bin\Debug\net5.0\kivetelkezeles.runtimeconfig.json
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\bin\Debug\net5.0\kivetelkezeles.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\bin\Debug\net5.0\kivetelkezeles.dll
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\bin\Debug\net5.0\ref\kivetelkezeles.dll
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\bin\Debug\net5.0\kivetelkezeles.pdb
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\obj\Debug\net5.0\kivetelkezeles.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\obj\Debug\net5.0\kivetelkezeles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\obj\Debug\net5.0\kivetelkezeles.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\obj\Debug\net5.0\kivetelkezeles.AssemblyInfo.cs
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\obj\Debug\net5.0\kivetelkezeles.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\obj\Debug\net5.0\kivetelkezeles.dll
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\obj\Debug\net5.0\ref\kivetelkezeles.dll
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\obj\Debug\net5.0\kivetelkezeles.pdb
+C:\Users\Admin\source\repos\kivetelkezeles\kivetelkezeles\obj\Debug\net5.0\kivetelkezeles.genruntimeconfig.cache

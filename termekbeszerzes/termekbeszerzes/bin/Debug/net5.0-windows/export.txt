@@ -1,0 +1,6 @@
+Termek;Mennyiseg
+TOSHIBA 32 GB pendrive;4324
+SAMSUNG 16 GB pendrive;23432
+korte;1
+szilva;1
+alma;1
