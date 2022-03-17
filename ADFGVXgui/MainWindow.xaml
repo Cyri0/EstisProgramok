@@ -1,0 +1,17 @@
+﻿<Window x:Class="ADFGVXgui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ADFGVXgui"
+        mc:Ignorable="d"
+        Title="ADFGVX gui" Height="668" Width="448">
+    <Grid>
+        <Label Content="Ellenőrzés eredménye:" HorizontalAlignment="Left" Margin="24,24,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="listaDoboz" HorizontalAlignment="Center" Height="271" Margin="0,55,0,0" VerticalAlignment="Top" Width="400"/>
+        <Label Content="A betöltött kódtábla:" HorizontalAlignment="Left" Margin="24,331,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="betoltes" Content="Kódtábla betöltése" HorizontalAlignment="Left" Height="26" Margin="280,24,0,0" VerticalAlignment="Top" Width="144" Click="betoltes_Click"/>
+        <Label x:Name="betoltottKodtabla" Content="s n f s d&#xD;&#xA;s n f i d&#xD;&#xA;s n f s d&#xD;&#xA;s n f s d&#xD;&#xA;s n f s d" HorizontalAlignment="Center" Margin="0,362,0,0" VerticalAlignment="Top" Width="400" Height="252" FontSize="32" FontFamily="Courier New"/>
+
+    </Grid>
+</Window>
