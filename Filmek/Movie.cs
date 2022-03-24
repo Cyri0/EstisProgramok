@@ -20,5 +20,36 @@ namespace Filmek
         {
             return this.title;
         }
+
+        public List<string> getActors()
+        {
+            return this.cast.Split(',').ToList();
+        }
+
+        public bool containsActor(string actor)
+        {
+            foreach (string item in this.getActors())
+            {
+                if (item.ToUpper().Contains(actor.ToUpper()))
+                    return true;
+            }
+            return false;
+        }
+
+        public int getYear()
+        {
+            // "2022"
+            int year;
+            try
+            {
+                year = int.Parse(this.release_date.Split('.')[0]);
+            }
+            catch (Exception)
+            {
+                year = 0;
+            }
+
+            return year;
+        }
     }
 }

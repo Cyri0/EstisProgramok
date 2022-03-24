@@ -8,7 +8,7 @@
         Title="Film++" Height="450" Width="800">
     <Grid>
         <TextBox x:Name="searchBarUI" HorizontalAlignment="Left" Height="37" Margin="212,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="533" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Padding="5,0,5,0" TextChanged="searchBarUI_TextChanged"/>
-        <ComboBox x:Name="typeUI" HorizontalAlignment="Left" Height="37" Margin="66,31,0,0" VerticalAlignment="Top" Width="132"/>
+        <ComboBox x:Name="typeUI" HorizontalAlignment="Left" Height="37" Margin="66,31,0,0" VerticalAlignment="Top" Width="132" SelectionChanged="typeUI_SelectionChanged"/>
         <ListBox x:Name="matchMoviesUI" HorizontalAlignment="Left" Height="308" Margin="66,84,0,0" VerticalAlignment="Top" Width="256" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="matchMoviesUI_SelectionChanged"/>
         <Label x:Name="movieTitleUI" Content="Django elszabadul (2012)" HorizontalAlignment="Left" Height="47" Margin="342,149,0,0" VerticalAlignment="Top" Width="403" FontSize="24" FontWeight="Bold"/>
         <Label x:Name="directorUI" Content="Quentin Tarantino" HorizontalAlignment="Left" Margin="345,186,0,0" VerticalAlignment="Top" FontSize="16" FontStyle="Italic" Width="149"/>

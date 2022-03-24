@@ -34,7 +34,7 @@ namespace Filmek
         private void read() {
             try
             {
-                StreamReader sr = new StreamReader("movies.txt");
+                StreamReader sr = new StreamReader("movies.txt", Encoding.Default);
                 sr.ReadLine(); // eldobjuk az első sort
 
                 while (!sr.EndOfStream)
@@ -58,17 +58,48 @@ namespace Filmek
 
         private void searchBarUI_TextChanged(object sender, TextChangedEventArgs e)
         {
+            refreshList();
+        }
+
+        private void refreshList()
+        {
             matchMoviesUI.Items.Clear();
 
-            if(searchBarUI.Text != "")
+            if (searchBarUI.Text != "")
             {
                 foreach (Movie item in movies)
                 {
-                    if (item.title.ToUpper().Contains(searchBarUI.Text.ToUpper()))
+                    switch (typeUI.SelectedIndex)
                     {
-                        matchMoviesUI.Items.Add(item);
+                        case 0: searchByTitle(item); break;
+                        case 1: searchByDirector(item); break;
+                        case 2: searchByActor(item); break;
+                        default: break;
                     }
                 }
+            }
+        }
+
+        private void searchByTitle(Movie item)
+        {
+            if (item.title.ToUpper().Contains(searchBarUI.Text.ToUpper()))
+            {
+                matchMoviesUI.Items.Add(item);
+            }
+        }
+
+        private void searchByDirector(Movie item)
+        {
+            if (item.director.ToUpper().Contains(searchBarUI.Text.ToUpper()))
+            {
+                matchMoviesUI.Items.Add(item);
+            }
+        }
+
+        private void searchByActor(Movie item) {
+            if (item.containsActor(searchBarUI.Text))
+            {
+                matchMoviesUI.Items.Add(item);
             }
         }
 
@@ -78,11 +109,16 @@ namespace Filmek
 
             if(choosen != null)
             {
-                movieTitleUI.Content = choosen.title;
+                movieTitleUI.Content = $"{choosen.title} ({choosen.getYear()})";
                 directorUI.Content = choosen.director;
                 castUI.Content = choosen.cast;
                 rateUI.Content = "10/" + choosen.vote_average;
             }
+        }
+
+        private void typeUI_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            refreshList();
         }
     }
 }
