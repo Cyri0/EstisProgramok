@@ -1,0 +1,18 @@
+﻿<Window x:Class="regisztracio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:regisztracio"
+        mc:Ignorable="d"
+        Title="Bevásárlólista" Height="328" Width="409">
+    <Grid>
+        <TextBox x:Name="inputGUI" HorizontalAlignment="Left" Height="26" Margin="15,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" />
+        <ComboBox x:Name="dropdownGUI" HorizontalAlignment="Left" Height="26" Margin="190,10,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="addBtn" Content="Hozzáad" HorizontalAlignment="Left" Height="20" Margin="325,10,0,0" VerticalAlignment="Top" Width="60" Click="addBtn_Click"/>
+        <Button x:Name="deleteBtn" Content="Töröl" HorizontalAlignment="Left" Height="20" Margin="325,41,0,0" VerticalAlignment="Top" Width="60" Click="deleteBtn_Click"/>
+        <Button x:Name="changeBtn" Content="Módosít" HorizontalAlignment="Left" Height="20" Margin="325,71,0,0" VerticalAlignment="Top" Width="60" Click="changeBtn_Click"/>
+        <ListBox x:Name="listGUI" HorizontalAlignment="Left" Height="238" Margin="15,41,0,0" VerticalAlignment="Top" Width="295"/>
+        <Button x:Name="saveBtn" Content="Mentés" HorizontalAlignment="Left" Height="20" Margin="325,259,0,0" VerticalAlignment="Top" Width="60" Click="saveBtn_Click"/>
+    </Grid>
+</Window>
